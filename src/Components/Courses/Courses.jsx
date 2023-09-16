@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Course from "../Course/Course";
 
-const Courses = () => {
+const Courses = ({handleSelect}) => {
     const [courses, setCourses] = useState([]);
 
     useEffect(() => {
@@ -18,6 +18,7 @@ const Courses = () => {
                     <Course
                         course={course}
                         key={idx}
+                        handleSelect={handleSelect}
                     ></Course>)
             }
         </div>
