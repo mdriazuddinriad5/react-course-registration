@@ -8,7 +8,7 @@ const Carts = ({ cartTitle, courseCredit, coursePrice }) => {
 
 
     return (
-        <div className="w-1/4 bg-[#FFF] px-6 pb-6 h-full">
+        <div className="lg:w-1/4 bg-[#FFF] px-6 pb-6 h-full rounded-xl mb-6 pt-1 lg:pt-0 lg:mb-0">
             <h2 className="mt-6 text-[#2F80ED] font-bold text-lg">Credit Hour Remaining {20 - courseCredit} hr</h2>
             {cartTitle.length > 0 ? <hr className="my-4" /> : null}
 

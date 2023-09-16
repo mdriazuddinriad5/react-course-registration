@@ -49,7 +49,7 @@ function App() {
 
     <div>
       <Header></Header>
-      <div className='flex gap-6 w-11/12 mx-auto'>
+      <div className='lg:flex flex-col lg:flex-row gap-6 w-11/12 mx-auto'>
         <Courses handleSelect={handleSelect}></Courses>
         <Carts cartTitle={cartTitle} courseCredit={courseCredit} coursePrice={coursePrice}></Carts>
       </div>
